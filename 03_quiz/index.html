@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+  <form method="POST" class="is-not-results">
+    <fieldset>
+      <legend>Which access modifier allows access from anywhere in the program? </legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+          <label for="answer-0-1" class="answer__item answer__item--is-correct">
+            public
+            <span class="answer__reveal-text">The public keyword allows access to the method or property from anywhere in the program.</span>
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+          <label for="answer-0-2" class="answer__item">
+            private
+           
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+          <label for="answer-0-3" class="answer__item">
+            protected
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+          <label for="answer-0-4" class="answer__item">
+            default
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which access modifier allows access through inheritance?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+          <label for="answer-1-1" class="answer__item">
+            public
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+          <label for="answer-1-2" class="answer__item">
+            default
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+          <label for="answer-1-3" class="answer__item">
+            private
+           
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+          <label for="answer-1-4" class="answer__item answer__item--is-correct">
+            protected
+            <span class="answer__reveal-text">The protected keyword allows access from within the class where the variable or method was declared and from within any additional class that inherits from that class. </span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which keyword indicates that a method or variable belongs to a class rather than objects instantiated from that class?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+          <label for="answer-2-1" class="answer__item">
+            private
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+          <label for="answer-2-2" class="answer__item answer__item--is-correct">
+            static
+            <span class="answer__reveal-text">static methods are shared between all instances of a class because they belong to the class rather than the objects created from that class. </span>
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-3" value="3" required>
+          <label for="answer-2-3" class="answer__item">
+            void
+           
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+          <label for="answer-2-4" class="answer__item">
+            arg
+           
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
