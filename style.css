@@ -1,19 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+  font-family: 'Inter', sans-serif;
+  color: #2D354C;
+}
+
+p{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2D354C;
+  opacity: 0.8;
+}
+
 fieldset {
 	border: 0;
-	margin: 2rem 0;
+  margin: 2rem 0;
+  height: 250px;
+
 }
 
 fieldset legend {
-	font-weight: 700;
+  font-weight: 700;
+}
+
+.answer__reveal-text{
+  font-size: .85em;
 }
 
 .answer__item {
-    background-color: #f6f6f6;
+    background: rgba(45, 53, 76, 0.05);
+    border-radius: 6px;
     display: block;
     position: relative;
     cursor: pointer;
     padding: 0.75rem 1.25rem;
-	 margin: 0.25rem 0;
+    margin: 0.25rem 0;
+    
+   
+
 }
 
 /* Hide Radio Buttons and Submit Button */
@@ -22,17 +49,17 @@ input[type="radio"], button {
 }
 
 /* Any correct answer on any answered question, highlight in light green */
-:valid .answer__item--is-correct { background-color: rgba(61, 181, 64, 0.6) }
+:valid .answer__item--is-correct { background-color: #e4f1f6; }
 
 /* Show any extra explanatory text */
 .answer__reveal-text { display: none; }
 :valid .answer__reveal-text { display: block }
 
 /* Any chosen answer, highlight in red */
-:checked + .answer__item { color: #ffffff; background-color: #c70000 }
+:checked + .answer__item { color: #ffffff; background-color: #E65E5E; }
 
 /* Any correctly chosen answer, highlight in bright green */
-:checked + .answer__item--is-correct { background-color: #3db540; }
+:checked + .answer__item--is-correct { color: #ffffff; background-color: #2cc5fa; }
 
 /* Show the icon for the selected answer */
 :checked + .answer__item .answer__icon { display: inline-block }
@@ -41,12 +68,3 @@ input[type="radio"], button {
 /* prevent chosing another answer once chosen */
 :valid { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
 :valid + .answer__item { pointer-events: none }
-
-/* keep track of score */
-form { counter-reset: quiz-score }
-:checked + .answer__item--is-correct { counter-increment: quiz-score }
-.score:after { content: counter(quiz-score) "/" attr(data-question-count) }
-
-/* show score once quiz has been completed */
-.message { display: none; }
-form:valid .message { display: block }
