@@ -8,66 +8,95 @@
 <body>
   <form method="POST" class="is-not-results">
     <fieldset>
-      <legend>Question1</legend>
+      <legend>Which data type would you use to store 456.7831 </legend>
       <div class="answers">
         <div class="answer">
           <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
           <label for="answer-0-1" class="answer__item answer__item--is-correct">
-            Answer 1
-            <span class="answer__reveal-text">Explanation</span>
+            double
+            <span class="answer__reveal-text">Integers can only store whole numbers. When storing decimal numbers, we need to use a float or double. </span>
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
           <label for="answer-0-2" class="answer__item">
-            Answer 2
+            int
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
           <label for="answer-0-3" class="answer__item">
-            Answer 3
+            String
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
           <label for="answer-0-4" class="answer__item">
-            Answer 4
+            boolean
           </label>
         </div>
       </div>
     </fieldset>
     <fieldset>
-      <legend>Question2</legend>
+      <legend>How do you add a new element to an array?</legend>
       <div class="answers">
         <div class="answer">
           <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
           <label for="answer-1-1" class="answer__item">
-            Answer 1
+            Array.push();
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
           <label for="answer-1-2" class="answer__item">
-            Answer 2
+            push(arrayName);
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
           <label for="answer-1-3" class="answer__item answer__item--is-correct">
-            Answer 3
-            <span class="answer__reveal-text">Explanation</span>
+            There is no way to add elements to an array.
+            <span class="answer__reveal-text">In Java, arrays cannot be extended. Later we'll learn about ArrayList which are like dynamically sized arrays. </span>
           </label>
         </div>
         <div class="answer">
           <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
           <label for="answer-1-4" class="answer__item">
-            Answer 4
+            arrayName[i+1] = newValue;
           </label>
         </div>
       </div>
     </fieldset>
-    <button type="submit">Submit answers</button>
+    <fieldset>
+      <legend>What is the proper way to print "Hello" from the String[] wordList = {"Hi", "Hello", "Good bye"}?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+          <label for="answer-1-1" class="answer__item">
+            System.out.println(wordList[1]);
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+          <label for="answer-1-2" class="answer__item">
+            System.out.println(wordList[i]);
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+          <label for="answer-1-3" class="answer__item answer__item--is-correct">
+            System.out.println(wordList[1]);
+            <span class="answer__reveal-text">In Java, arrays are indexed from 0. This means the second element is at the index 1. </span>
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+          <label for="answer-1-4" class="answer__item">
+            System.out.println(wordList[2]);
+          </label>
+        </div>
+      </div>
+    </fieldset>
   </form>
 </body>
 
