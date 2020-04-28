@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+  <form method="POST" class="is-not-results">
+    <fieldset>
+      <legend> What is the term for a specific implementation of an inherited method in a subclass?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-1" value="1" required>
+          <label for="answer-0-1" class="answer__item">
+            Super
+            
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-2" value="2" required>
+          <label for="answer-0-2" class="answer__item">
+            Overload
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-3" value="3" required>
+          <label for="answer-0-3" class="answer__item answer__item--is-correct">
+            Overriding
+            <span class="answer__reveal-text">Method overriding is the act of declaring a method in a child class that already exists in the parent class.</span>
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[0]" id="answer-0-4" value="4" required>
+          <label for="answer-0-4" class="answer__item ">
+            Duplicating
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which members are inherited by a subclass from the parent class?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-1" value="1" required>
+          <label for="answer-1-1" class="answer__item">
+            private, public, default
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-2" value="2" required>
+          <label for="answer-1-2" class="answer__item">
+            protected, default, private
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-3" value="3" required>
+          <label for="answer-1-3" class="answer__item">
+            public, private, protected
+           
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[1]" id="answer-1-4" value="4" required>
+          <label for="answer-1-4" class="answer__item answer__item--is-correct">
+            public, protected, default
+            <span class="answer__reveal-text">All non-private variables and methods are inherited from the superclass. </span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>When calling the super constructor not required in the subclass constructor?</legend>
+      <div class="answers">
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-1" value="1" required>
+          <label for="answer-2-1" class="answer__item answer__item--is-correct">
+            When there is a no args (or default) constructor in the super class
+            <span class="answer__reveal-text">You are required to call the superclass constructor in all subclass constructors unless a default constructor exists on the superclass</span>
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-2" value="2" required>
+          <label for="answer-2-2" class="answer__item">
+            When the subclass constructor parameters matches the superclass constructor parameters
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-3" value="3" required>
+          <label for="answer-2-3" class="answer__item">
+            When the subclass has multiple constructors
+           
+          </label>
+        </div>
+        <div class="answer">
+          <input type="radio" name="answers[2]" id="answer-2-4" value="4" required>
+          <label for="answer-2-4" class="answer__item">
+            When the superclass constructor is overloaded
+           
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>
